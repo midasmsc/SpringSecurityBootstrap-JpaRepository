@@ -258,7 +258,7 @@
                             <h5 class="card-header">Add new user</h5>
                             <div class="card-body text-center">
                                 <form th:method="POST" th:action="@{/admin/}" th:object="${user}">
-                                    <label class="font-weight-bold" for="firstNameNew">name</label>
+                                    <label class="font-weight-bold" for="firstNameNew">Name</label>
                                     <br>
                                     <input class="form-control" type="text" required minlength="2" maxlength="15"
                                            name="name"
@@ -266,7 +266,7 @@
                                            style="height: 30px; width: 300px; margin: 0 auto"
                                            placeholder="name"/>
                                     <br>
-                                    <label class="font-weight-bold" for="lastNameNew">lastname</label>
+                                    <label class="font-weight-bold" for="lastNameNew">Last name</label>
                                     <br>
                                     <input class="form-control" type="text" required minlength="2" maxlength="15"
                                            name="lastName"
@@ -274,7 +274,7 @@
                                            style="height: 30px; width: 300px; margin: 0 auto"
                                            placeholder="lastname"/>
                                     <br>
-                                    <label class="font-weight-bold" for="ageNew">age</label>
+                                    <label class="font-weight-bold" for="ageNew">Age</label>
                                     <br>
                                     <input class="form-control" type="text" step="1" min="0" required minlength="1"
                                            maxlength="120" name="age"
@@ -282,7 +282,7 @@
                                            style="height: 30px; width: 300px; margin: 0 auto"
                                            placeholder="age"/>
                                     <br>
-                                    <label class="font-weight-bold" for="emailNew">email</label>
+                                    <label class="font-weight-bold" for="emailNew">Email</label>
                                     <br>
                                     <input class="form-control" type="text" step="1" min="0" required minlength="1"
                                            maxlength="120" name="email"
@@ -290,7 +290,7 @@
                                            style="height: 30px; width: 300px; margin: 0 auto"
                                            placeholder="email"/>
                                     <br>
-                                    <label class="font-weight-bold" for="passwordNew">password</label>
+                                    <label class="font-weight-bold" for="passwordNew">Password</label>
                                     <br>
                                     <input class="form-control" type="text" required minlength="3" maxlength="15"
                                            name="password"
@@ -298,7 +298,7 @@
                                            style="height: 30px; width: 300px; margin: 0 auto"
                                            placeholder="password"/>
                                     <br>
-                                    <label class="font-weight-bold">role</label>
+                                    <label class="font-weight-bold">Role</label>
                                     <select class="form-control form-control-sm" name="roles" multiple
                                             th:value="${user.getRoles}"
                                             style="height: 50px; width: 300px; margin: 0 auto">
